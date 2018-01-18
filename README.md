@@ -1,3 +1,3 @@
 # Android-Development
 
-Repository to upload examples, exercises and apps from the android development course.
+Chapter 7: UI Fragments and the Fragment Manager
