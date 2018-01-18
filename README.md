@@ -1,3 +1,3 @@
 # Android-Development
 
-Chapter 7: UI Fragments and the Fragment Manager
+Chapter 8: Displaying Lists with RecyclerView
