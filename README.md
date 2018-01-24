@@ -1,3 +1,3 @@
 # Android-Development
 
-Chapter 11: Using ViewPager
+Chapter 12: Dialogs
