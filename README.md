@@ -1,3 +1,3 @@
 # Android-Development
 
-Chapter 12: Dialogs
+Chapter 13: The Toolbar
