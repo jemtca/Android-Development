@@ -47,10 +47,17 @@ public class CrimeFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //mCrime = new Crime();
-        //UUID crimeId = (UUID) getActivity().getIntent().getSerializableExtra(CrimeActivity.EXTRA_CRIME_ID);
         UUID crimeId = (UUID) getArguments().getSerializable(ARG_CRIME_ID);
         mCrime = CrimeLab.get(getActivity()).getCrime(crimeId);
+    }
+
+    @Override
+    public void onPause(){
+
+        super.onPause();
+
+        CrimeLab.get(getActivity()).updateCrime(mCrime);
+
     }
 
     @Nullable
@@ -84,7 +91,6 @@ public class CrimeFragment extends Fragment {
         //connect the button
         mDateButton = (Button) v.findViewById(R.id.crime_date);
         updateDate();
-        //mDateButton.setEnabled(false);
         mDateButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

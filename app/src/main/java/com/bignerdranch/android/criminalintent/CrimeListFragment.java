@@ -19,6 +19,8 @@ import java.util.List;
 
 public class CrimeListFragment extends Fragment{
 
+    private static final String SAVED_SUBTITLE_VISIBLE = "subtitle";
+
     private RecyclerView mCrimeRecyclerView;
     private CrimeAdapter mAdapter;
     private boolean mSubtitleVisible;
@@ -38,6 +40,12 @@ public class CrimeListFragment extends Fragment{
 
         mCrimeRecyclerView = (RecyclerView) view.findViewById(R.id.crime_recycler_view);
         mCrimeRecyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+        if(savedInstanceState != null){
+
+            mSubtitleVisible = savedInstanceState.getBoolean(SAVED_SUBTITLE_VISIBLE);
+
+        }
 
         updateUI();
 
@@ -77,9 +85,6 @@ public class CrimeListFragment extends Fragment{
         @Override
         public void onClick(View view){
 
-            //Toast.makeText(getActivity(), mCrime.getTitle() + " clicked!", Toast.LENGTH_SHORT).show();
-            //Intent intent  = new Intent (getActivity(), CrimeActivity.class);
-            //Intent intent = CrimeActivity.newIntent(getActivity(),mCrime.getId());
             Intent intent = CrimePagerActivity.newIntent(getActivity(), mCrime.getId());
             startActivity(intent);
 
@@ -121,6 +126,12 @@ public class CrimeListFragment extends Fragment{
             return mCrimes.size();
 
         }
+
+        public void setCrimes(List<Crime> crimes){
+
+            mCrimes = crimes;
+
+        }
     }
 
     @Override
@@ -128,6 +139,14 @@ public class CrimeListFragment extends Fragment{
 
         super.onResume();
         updateUI();
+
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle outState){
+
+        super.onSaveInstanceState(outState);
+        outState.putBoolean(SAVED_SUBTITLE_VISIBLE, mSubtitleVisible);
 
     }
 
@@ -212,6 +231,7 @@ public class CrimeListFragment extends Fragment{
         }
         else{
 
+            mAdapter.setCrimes(crimes);
             mAdapter.notifyDataSetChanged();
 
         }
