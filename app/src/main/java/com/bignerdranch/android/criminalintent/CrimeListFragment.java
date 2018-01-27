@@ -179,7 +179,7 @@ public class CrimeListFragment extends Fragment{
 
             case R.id.new_crime:
 
-                Crime crime= new Crime();
+                Crime crime = new Crime();
                 CrimeLab.get(getActivity()).addCrime(crime);
                 Intent intent = CrimePagerActivity.newIntent(getActivity(), crime.getId());
                 startActivity(intent);

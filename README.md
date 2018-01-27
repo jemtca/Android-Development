@@ -1,3 +1,3 @@
 # Android-Development
 
-Chapter 15: SQLite Databases
+Chapter 14: SQLite Databases (Challenge: Deleting Crimes)
