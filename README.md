@@ -1,3 +1,3 @@
 # Android-Development
 
-Chapter 15: Implicit Intents
+Chapter 16: Taking Pictures with Intents
