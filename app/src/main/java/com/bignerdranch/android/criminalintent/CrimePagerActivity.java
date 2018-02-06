@@ -12,7 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import java.util.List;
 import java.util.UUID;
 
-public class CrimePagerActivity extends AppCompatActivity {
+public class CrimePagerActivity extends AppCompatActivity implements CrimeFragment.Callbacks {
 
     private static final String EXTRA_CRIME_ID = "com.bignerdranch.android.criminalintent.crime_id";
 
@@ -70,6 +70,13 @@ public class CrimePagerActivity extends AppCompatActivity {
             }
 
         }
+
+    }
+
+    @Override
+    public void onCrimeUpdated(Crime crime){
+
+
 
     }
 
