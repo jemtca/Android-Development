@@ -1,3 +1,3 @@
 # Android-Development
 
-Chapter 16: Taking Pictures with Intents
+Chapter 17: Two Pane Master Detail Interfaces
