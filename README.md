@@ -1,3 +1,3 @@
 # Android-Development
 
-Chapter 17: Two Pane Master Detail Interfaces
+Chapter 18: Localization

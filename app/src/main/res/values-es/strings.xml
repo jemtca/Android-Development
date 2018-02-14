@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">IntentoCriminal</string>
+    <string name="crime_title_hint">Introduzca el título del crimen.</string>
+    <string name="crime_title_label">Título</string>
+    <string name="crime_details_label">Detalles</string>
+    <string name="crime_solved_label">Resuelto</string>
+    <string name="date_picker_title">Fecha del crimen:</string>
+    <string name="new_crime">Crimen nuevo</string>
+    <string name="show_subtitle">Mostrar Subtítulos</string>
+    <string name="hide_subtitle">Ocultar Subtítulos</string>
+    <string name="subtitle_format">%1$d crímenes</string>
+    <string name="delete_crime">Eliminar crimen</string>
+    <string name="crime_suspect_text">Elegir sospechoso</string>
+    <string name="crime_report_text">Enviar informe del crimen</string>
+    <string name="crime_report">%1$s! El crimen fue descubierto %2$s. %3$s, y %4$s</string>
+    <string name="crime_report_solved">El caso está resuelto</string>
+    <string name="crime_report_unsolved">El caso no está resuelto</string>
+    <string name="crime_report_no_suspect">no hay sospechoso.</string>
+    <string name="crime_report_suspect">el/la sospechoso/a %s.</string>
+    <string name="crime_report_subject">IntentoCriminal Informe del Crimen</string>
+    <string name="send_report">Enviar informe del crimen a través de</string>
+</resources>
