@@ -40,6 +40,8 @@
             android:scaleType="centerInside"
             android:cropToPadding="true"
             android:background="@android:color/darker_gray"
+            android:contentDescription="@string/crime_photo_no_image_description"
+            android:focusable="true"
             />
 
         <ImageButton
@@ -47,6 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@android:drawable/ic_menu_camera"
+            android:contentDescription="@string/crime_photo_button_description"
             />
 
     </LinearLayout>
@@ -63,6 +66,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/crime_title_label"
                 style="?android:listSeparatorTextViewStyle"
+                android:labelFor="@+id/crime_title"
                 />
 
             <EditText
